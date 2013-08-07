@@ -10,7 +10,7 @@ public:
 	void addAttrib(const RenderStateAttrib& attrib);
 	void removeAttrib(const RenderStateAttrib& attrib);
 
-	uint32_t getRenderStateMask() const;
+	RenderStateMask getMask() const;
 
 private:
 	std::vector<const RenderStateAttrib&> mAttribs;

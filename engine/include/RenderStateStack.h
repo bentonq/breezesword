@@ -3,8 +3,7 @@
 
 #include <stack>
 #include <vector>
-
-class RenderState;
+#include "RenderState.h"
 
 class RenderStateStack {
 public:
