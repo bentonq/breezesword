@@ -3,7 +3,9 @@
 
 #include <stack>
 #include <vector>
-#include "RenderState.h"
+#include "RenderStateMask.h"
+
+class RenderState;
 
 class RenderStateStack {
 public:
@@ -11,11 +13,12 @@ public:
 	void push(const RenderState& renderState);
 	void pop();
 
+	void clearDirtyRenderState();
 	RenderState* getDirtyRenderState() const;
 
 private:
+	RenderStateMask mDirtyStateMask;
 	std::stack<const RenderState&> mStateStack;
-	unsigned int mDirtyFlags;
 };
 
 #endif // RENDER_STATE_STACK_H

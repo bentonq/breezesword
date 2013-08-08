@@ -13,6 +13,7 @@ public:
 	RenderStateMask getMask() const;
 
 private:
+	RenderStateMask mStateMask;
 	std::vector<const RenderStateAttrib&> mAttribs;
 };
 
