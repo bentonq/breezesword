@@ -1,7 +1,6 @@
 #ifndef RENDER_STATE_ATTRIB_H
 #define RENDER_STATE_ATTRIB_H
 
-#include <cstdint>
 #include "RenderStateMask.h"
 
 class RenderStateAttrib {

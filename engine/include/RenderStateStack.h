@@ -9,7 +9,7 @@ class RenderState;
 
 class RenderStateStack {
 public:
-	void setInitialRenderState(const RenderState& renderState);
+	void init(const RenderState& renderState);
 	void push(const RenderState& renderState);
 	void pop();
 
